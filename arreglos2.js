@@ -19,13 +19,11 @@ console.log({ nuevaLongitud, juegos });
 let juegoBorrado = juegos.pop();
 console.log({ juegoBorrado, juegos });
 
-
 let pos = 1;
 
 console.log( juegos );
 let juegosBorrados = juegos.splice( pos, 2);
 console.log({ juegosBorrados, juegos });
-
 
 let metroidIndex = juegos.indexOf('Metroid'); // CaSeSeNsItIvE
 console.log({ metroidIndex });
