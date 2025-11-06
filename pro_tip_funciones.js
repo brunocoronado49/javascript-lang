@@ -25,7 +25,7 @@ const batman = {
   trajes: ['New 52', 'Nolan', 'BVS', 'Pattinson']
 };
 
-const imprimirProps = ({nombre, codeName, vivo, edad, trajes}) => {
+const imprimirProps = ({nombre, codeName, vivo, edad = 30, trajes}) => {
   console.log(nombre);
   console.log(codeName);
   console.log(vivo);
