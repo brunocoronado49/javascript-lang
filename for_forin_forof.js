@@ -7,8 +7,8 @@ for (let i = 0; i < heroes.length; i++) {
 }
 
 console.log('************* For in *************');
-for (const hero in heroes) {
-  console.log(`${hero} - ${heroes[hero]}`);
+for (const i in heroes) {
+  console.log(`${i} - ${heroes[i]}`);
 }
 
 console.log('************* For of *************');
