@@ -6,6 +6,9 @@ import { demoComponent } from './concepts/demo'
 import { callbackComponent } from './concepts/02-callbacks'
 import { promisesComponent } from './concepts/03-promises'
 import { promiseRaceComponent } from './concepts/04-promise-race'
+import { asyncComponent } from './concepts/05-async'
+import { asyncAwaitComponent } from './concepts/06-async-await'
+import { asyncAwait2Component } from './concepts/07-async-await'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -17,9 +20,9 @@ document.querySelector('#app').innerHTML = `
     </a>
     <h1>Hello Vite!</h1>
     <div class="card">
-      
+
     </div>
-    
+
   </div>
 `
 const element = document.querySelector('.card');
@@ -27,4 +30,7 @@ const element = document.querySelector('.card');
 // demoComponent(element);
 // callbackComponent(element);
 // promisesComponent(element);
-promiseRaceComponent(element);
+// promiseRaceComponent(element);
+// asyncComponent(element);
+// asyncAwaitComponent(element);
+asyncAwait2Component(element);
