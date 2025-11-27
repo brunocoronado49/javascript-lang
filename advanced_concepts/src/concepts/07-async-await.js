@@ -3,18 +3,25 @@
  * @param {HTMLDivElement} element
  */
 export const asyncAwait2Component = async (element) => {
-  const value1 = await slowPromise();
-  const value2 = await mediumPromise();
-  const value3 = await fastPromise();
+  console.time('start');
+
+  // const value1 = await slowPromise();
+  // const value2 = await mediumPromise();
+  // const value3 = await fastPromise();
+  const [value1, value2, value3] = await Promise.all([
+    slowPromise(),
+    mediumPromise(),
+    fastPromise(),
+  ]);
 
   element.innerHTML = `
     value: ${value1} <br/>
     value: ${value2} <br/>
     value: ${value3} <br/>
     `;
-}
 
-// TODO: Finish the Optimizar promesas no sencuenciadas class
+  console.timeEnd('start');
+}
 
 const slowPromise = () =>
   new Promise((resolve) => {
